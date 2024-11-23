@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" charset="utf-8">
+<head>
+</head>
+<body>
+	{{ block "main" . }}
+	{{ end }}
+    {{ if .Store.Get "hasMermaid" }}
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+{{ end }}
+</body>
+</html>

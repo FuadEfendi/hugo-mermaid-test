@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home page on My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home page on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Mermaid Diagrams</title>
+      <link>http://localhost:1313/firstpost/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/firstpost/</guid>
+      <description>&lt;p&gt;This line is from &lt;code&gt;content/firstpost.md&lt;/code&gt;.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/&#34;&gt;Go to home&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;class-diagram-with--createproducta--producta1&#34;&gt;Class Diagram with &lt;code&gt; +CreateProductA() : ProductA1&lt;/code&gt;&lt;/h2&gt;&#xA;&lt;pre class=&#34;mermaid&#34;&gt;classDiagram&#xA;    AbstractFactory &lt;|.. ConcreteFactory1&#xA;    AbstractFactory &lt;|.. ConcreteFactory2&#xA;&#xA;    AbstractProductA &lt;|-- ProductA1&#xA;    AbstractProductA &lt;|-- ProductA2&#xA;    AbstractProductB &lt;|-- ProductB1&#xA;    AbstractProductB &lt;|-- ProductB2&#xA;&#xA;    Client --&gt; AbstractFactory&#xA;    Client --&gt; AbstractProductA&#xA;    Client --&gt; AbstractProductB&#xA;&#xA;    class AbstractFactory {&#xA;        +CreateProductA() : AbstractProductA&#xA;        +CreateProductB() : AbstractProductB&#xA;    }&#xA;&#xA;    class ConcreteFactory1 {&#xA;        +CreateProductA() : ProductA1&#xA;        +CreateProductB() : ProductB1&#xA;    }&#xA;&#xA;    class ConcreteFactory2 {&#xA;        +CreateProductA() : ProductA2&#xA;        +CreateProductB() : ProductB2&#xA;    }&#xA;&#xA;    class AbstractProductA {&#xA;        &lt;&lt;interface&gt;&gt;&#xA;    }&#xA;&#xA;    class AbstractProductB {&#xA;        &lt;&lt;interface&gt;&gt;&#xA;    }&#xA;&#xA;    class ProductA1&#xA;    class ProductA2&#xA;    class ProductB1&#xA;    class ProductB2&#xA;  &lt;/pre&gt;</description>
+    </item>
+  </channel>
+</rss>

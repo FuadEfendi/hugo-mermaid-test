@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+</head>
+<body>
+	
+	<p>This line is from <code>content/firstpost.md</code>.</p>
+<p><a href="/">Go to home</a></p>
+<h2 id="class-diagram-with--createproducta--producta1">Class Diagram with <code> +CreateProductA() : ProductA1</code></h2>
+<pre class="mermaid">classDiagram
+    AbstractFactory <|.. ConcreteFactory1
+    AbstractFactory <|.. ConcreteFactory2
+
+    AbstractProductA <|-- ProductA1
+    AbstractProductA <|-- ProductA2
+    AbstractProductB <|-- ProductB1
+    AbstractProductB <|-- ProductB2
+
+    Client --> AbstractFactory
+    Client --> AbstractProductA
+    Client --> AbstractProductB
+
+    class AbstractFactory {
+        +CreateProductA() : AbstractProductA
+        +CreateProductB() : AbstractProductB
+    }
+
+    class ConcreteFactory1 {
+        +CreateProductA() : ProductA1
+        +CreateProductB() : ProductB1
+    }
+
+    class ConcreteFactory2 {
+        +CreateProductA() : ProductA2
+        +CreateProductB() : ProductB2
+    }
+
+    class AbstractProductA {
+        <<interface>>
+    }
+
+    class AbstractProductB {
+        <<interface>>
+    }
+
+    class ProductA1
+    class ProductA2
+    class ProductB1
+    class ProductB2
+  </pre>
+  
+  
+  <p>This line is from <code>layouts/_default/single.html</code>.</p>
+
+    
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+
+</body>
+</html>
